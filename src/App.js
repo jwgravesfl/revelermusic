@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Main from './Main'
+import Main from './navigation/Main'
 
 const App = () => {
   return (
