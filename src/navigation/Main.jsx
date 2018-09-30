@@ -9,15 +9,17 @@ import Page3 from '../components/Page3'
 export default class Main extends Component {
   render() {
     return (
-      
+      <div>
+      <NavBar /> 
       <BrowserRouter>
-        <Switch>
-        <NavBar />
+       
+      <Switch>
           <Route exact path="/" component={Page1} />
           <Route path="/page2" component={Page2} />
           <Route path="/page3" component={Page3} />
         </Switch>
       </BrowserRouter>
+      </div>
     )
   }
 }
