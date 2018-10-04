@@ -1,10 +1,18 @@
 import React from 'react'
 
+import styled from 'styled-components'
+
+const Page1Div = styled.div `
+height: 100vh;
+color: white;
+`
+
+
 const Page1 = () => {
   return (
-    <div>
+    <Page1Div>
       Page 1
-    </div>
+    </Page1Div>
   )
 }
 
