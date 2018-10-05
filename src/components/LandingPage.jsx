@@ -19,6 +19,12 @@ color: white;
   left: 20%;
   font-family: 'Allerta Stencil', sans-serif;
   font-weight: 500;
+
+  @media only screen and (max-width: 700px) {
+    font-size: 10vw;
+    top: 70%;
+    left: 20%;
+  }
 }
 
 #heatherName {
@@ -29,16 +35,32 @@ color: white;
   left: 70%;
   font-family: 'Allerta Stencil', sans-serif;
   font-weight: 500;
+
+  @media only screen and (max-width: 700px) {
+    font-size: 10vw;
+    top: 20%;
+    left: 35%;
+  }
 }
 
 #rmLogo {
   position: absolute;
-  top: 7%;
-  left: 47%;
+  top: 5%;
+  left: 50%;
 
   img {
-    width: 32vw;
+    width: 25vw;
   }
+
+  @media only screen and (max-width: 700px) {
+    position: absolute;
+    top: 7%;
+    left: 30%;
+  
+    img {
+      width: 40vw;
+    }
+   }
 }
 
 #jhLogo {
@@ -49,6 +71,17 @@ color: white;
   img {
     width: 16vw;
   }
+
+  @media only screen and (max-width: 700px) {
+      position: absolute;
+      top: 45%;
+      left: 10%;
+    
+      img {
+        width: 32vw;
+      }
+   }
+
 }
 
 #cdLogo {
@@ -59,6 +92,16 @@ color: white;
   img {
     width: 16vw;
   }
+
+  @media only screen and (max-width: 700px) {
+    position: absolute;
+    top: 55%;
+    left: 55%;
+  
+    img {
+      width: 38vw;
+    }
+ }
 }
 
 #landingPageWordsAtBottom {
@@ -68,6 +111,11 @@ color: white;
   bottom: 5%;
   color: white;
   font-family: 'Luckiest Guy', cursive;
+
+  @media only screen and (max-width: 700px) {
+    font-size: 3.5vw;
+   }
+  
 }
 
 #heatherLoveInstagram {
@@ -80,6 +128,20 @@ color: white;
 
   img {
     width: 3vw;
+  }
+
+  @media only screen and (max-width: 700px) {
+    position: absolute;
+    font-size: 5vw;
+    left: 55%;
+    top: 32%;
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+
+    img {
+        width: 12vw;
+        float: right;
+      }
   }
 
 }
