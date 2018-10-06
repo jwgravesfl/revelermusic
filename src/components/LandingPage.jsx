@@ -9,8 +9,12 @@ import CDLogo from '../assets/421CDLogo.png'
 import InstagramLogo from '../assets/instagramLogo.png'
 
 const LandingPageDiv = styled.div `
-height: 100vh;
+min-height: 90vh;
 color: white;
+
+@media only screen and (max-width: 700px) {
+  min-height: 85vh;
+}
 
 #jName {
   font-size: 2.5vw;
