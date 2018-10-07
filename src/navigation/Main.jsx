@@ -34,6 +34,7 @@ export default class Main extends Component {
           <Route path="/page1" component={Page1} />
           <Route path="/page2" component={Page2} />
           <Route path="/page3" component={Page3} />
+          <Route path="/page4" component={Page4} />
         </Switch>
       </BrowserRouter>
       </div>

@@ -100,7 +100,7 @@ const Page2 = () => {
             </div>
             <CardBody>
               <CardTitle className="servicesTitle" >Live Music</CardTitle>
-              <CardText className="servicesDescription justify-content-center" >With music brands to cover any event or occasion, Reveler Music offers Live Music services for Family Friendly or 21+.</CardText>
+              <CardText className="servicesDescription justify-content-center" >With music brands to cover any event or occasion, Reveler Music offers Live Music services for Family Friendly or 21+ occasions.</CardText>
             </CardBody>
           </Card>
         </Col>
