@@ -24,7 +24,7 @@ const Page3Div = styled.div `
   }
 
   #page3ProcessHeaderTitle {
-    width: 100%
+    width: 100%;
     font-family: 'PT Sans', sans-serif;
     font-weight: 900;
     font-style: italic;
