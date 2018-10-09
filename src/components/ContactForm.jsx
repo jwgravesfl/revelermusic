@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Form, Button, Label, Input, Row, Col, Container, Card, CardTitle, CardText } from 'reactstrap'
+import { Form, Button, Label, Input, Row, Col, Container, Card } from 'reactstrap'
 
 import {db} from '../firebase/firebase'
 
@@ -12,8 +12,16 @@ background-color: black;
         color: white;
         text-align: center;
         font-size: 4vw;
-        padding: 2vh;
+        padding-top: 2vh;
         font-family: 'PT Sans', sans-serif;
+
+      @media only screen and (max-width: 1200px) and (min-width: 700px)  {
+        font-size: 6vw;
+      }
+
+      @media only screen and (max-width: 700px) {
+        font-size: 8vw;
+      }
     }
 
     .newContactFormContainerDiv {
@@ -21,10 +29,26 @@ background-color: black;
         color: white;
         font-family: 'PT Sans', sans-serif;
         font-size: 2vw;
+
+        @media only screen and (max-width: 1200px) and (min-width: 700px)  {
+          font-size: 3.0vw;
+        }
+  
+        @media only screen and (max-width: 700px) {
+          font-size: 6.5vw;
+        }
     }
 
     .contactFormButtonRow {
         
+    }
+
+    .asLabel {
+        padding-top: 1vh;
+    }
+
+    .asInput {
+
     }
 
     .newContactFormButtonDiv {
@@ -35,10 +59,33 @@ background-color: black;
     .contactCards {
         
         background-color: transparent;
-        margin-left: 20%;
+        margin-left: 10%;
         margin-right: 20%;
         margin-top: 3vh;
-        border-color: white;
+        background-color: rgb(26, 26, 28, 1);
+
+        @media only screen and (max-width: 1200px) and (min-width: 700px)  {
+            margin-left: 5%;
+            margin-right: 10%;
+        }
+  
+        @media only screen and (max-width: 700px) {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    }
+
+    .contactCardsWords {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 1vw;
+
+        @media only screen and (max-width: 1200px) and (min-width: 700px)  {
+          font-size: 2.1vw;
+        }
+  
+        @media only screen and (max-width: 700px) {
+          font-size: 4.5vw;
+        }
     }
 
 `
@@ -122,11 +169,11 @@ export default class ContactForm extends Component {
             Contact Reveler Music
         </div>
                 <Row>
-                    <Col md="8" xs="12">
+                    <Col  lg="8" md="6" xs="12">
                     <Form onSubmit={this.handleSubmit}>
                         <Container className="newContactFormContainerDiv" >
                         <Row>   
-                            <Col>
+                            <Col lg="6" xs="12">
                                 <Label 
                                 for="fname"
                                 className="asLabel"
@@ -143,12 +190,12 @@ export default class ContactForm extends Component {
                                     className="asInput"
                                 />  
                             </Col>
-                            <Col>
+                            <Col lg="6" xs="12">
                                 <Label 
                                 for="lNameCompanyName"
                                 className="asLabel"
                                 >
-                                    Last Name or Company Name
+                                    Last/Company Name
                                 </Label>
                                 <Input
                                     type="text" 
@@ -162,7 +209,7 @@ export default class ContactForm extends Component {
                             </Col>
                         </Row>
                         <Row>
-                            <Col>
+                            <Col lg="6" xs="12">
                                 <Label 
                                 for="dateOfEvent"
                                 className="asLabel"
@@ -180,7 +227,7 @@ export default class ContactForm extends Component {
                                 />
                                 
                             </Col>
-                            <Col>
+                            <Col lg="6" xs="12">
                                 <Label 
                                 for="phoneNumber"
                                 className="asLabel"
@@ -199,7 +246,7 @@ export default class ContactForm extends Component {
                             </Col>
                         </Row>
                         <Row>
-                            <Col>
+                            <Col lg="6" xs="12">
                                 <Label 
                                 for="bestTimeToCall"
                                 className="asLabel"
@@ -216,7 +263,7 @@ export default class ContactForm extends Component {
                                     className="asInput"
                                 />
                             </Col>
-                            <Col>
+                            <Col lg="6" xs="12">
                                 <Label 
                                 for="emailAddress"
                                 className="asLabel"
@@ -263,29 +310,29 @@ export default class ContactForm extends Component {
                         </Container>
                         </Form>
                     </Col>
-                    <Col md="4" xs="12" id="MainColumn2">
+                    <Col lg="4" md="6" xs="12" id="MainColumn2">
                         <div>
                         <Card className="contactCards" body inverse>
-                            <CardTitle>
+                            <div className="contactCardsWords">
                             Colorado Springs - Pueblo
                             <br />
                             (719) 439-7950
-                            </CardTitle>
+                            </div>
                         </Card>
                         
                         <Card className="contactCards" body inverse>
-                            <CardTitle>
+                            <div className="contactCardsWords">
                             Denver - Castle Rock
                             <br />
                             (720) 306-1354
-                            </CardTitle>
+                            </div>
                         </Card>
                         <Card className="contactCards" body inverse>
-                            <CardTitle>Other Contacts</CardTitle>
-                            <CardText>Email - contact@revelermusic.com
+                            <div className="contactCardsWords">Other Contacts</div>
+                            <div className="contactCardsWords">Email - contact@revelermusic.com
                             <br />Facebook - @revelermusicllc
                             <br />Instagram - @revelermusicllc
-                            </CardText>
+                            </div>
                         </Card>
                         </div>
                     </Col>
