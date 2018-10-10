@@ -8,7 +8,8 @@ import Page2 from './Page2'
 import Page3 from './Page3'
 import Page4 from './Page4'
 import ContactForm from './ContactForm'
-
+import Page5 from './Page5'
+import Footer from './Footer'
 
 const HomeDiv = styled.div `
   background-color:transparent;
@@ -28,6 +29,8 @@ const Home = () => {
       <Page3 />
       <Page4 />
       <ContactForm />
+      <Page5 />
+      <Footer />
     </HomeDiv>
   )
 }

@@ -31,7 +31,7 @@ background-color: black;
         font-size: 2vw;
 
         @media only screen and (max-width: 1200px) and (min-width: 700px)  {
-          font-size: 3.0vw;
+          font-size: 2.5vw;
         }
   
         @media only screen and (max-width: 700px) {
@@ -80,11 +80,11 @@ background-color: black;
         font-size: 1vw;
 
         @media only screen and (max-width: 1200px) and (min-width: 700px)  {
-          font-size: 2.1vw;
+          font-size: 1.9vw;
         }
   
         @media only screen and (max-width: 700px) {
-          font-size: 4.5vw;
+          font-size: 4.2vw;
         }
     }
 
@@ -163,13 +163,13 @@ export default class ContactForm extends Component {
   render() {
 
     return (
-      <ContactFormsDiv>
+      <ContactFormsDiv id="rmContactForm">
         <div className="" >
         <div className="contactFormPageHeader">
             Contact Reveler Music
         </div>
                 <Row>
-                    <Col  lg="8" md="6" xs="12">
+                    <Col xl="8" lg="7" md="6" xs="12">
                     <Form onSubmit={this.handleSubmit}>
                         <Container className="newContactFormContainerDiv" >
                         <Row>   
@@ -310,7 +310,7 @@ export default class ContactForm extends Component {
                         </Container>
                         </Form>
                     </Col>
-                    <Col lg="4" md="6" xs="12" id="MainColumn2">
+                    <Col xl="4" lg="5" md="6" xs="12" id="MainColumn2">
                         <div>
                         <Card className="contactCards" body inverse>
                             <div className="contactCardsWords">

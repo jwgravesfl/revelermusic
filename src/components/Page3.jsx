@@ -110,7 +110,7 @@ const Page3Div = styled.div `
 
 const Page3 = () => {
   return (
-    <Page3Div>
+    <Page3Div id="page3">
       <div className="work-area bg-1">
           <Container id="page3Container" className="" >
               <Row>

@@ -163,7 +163,7 @@ const LandingPage = () => {
         Heather <br /> Love
       </div>
       <div id="heatherLoveInstagram">
-      <img src={InstagramLogo} alt="Instagram Logo" /> <br /> @xheatherlovex
+      <img src={InstagramLogo} alt="Instagram Logo" /> <br /> <a href="https://www.instagram.com/xheatherlovex/" >xheatherlovex</a>
     </div>
       <div id="rmLogo">
         <img src={RMLogo} alt="Reveler Music Logo" />

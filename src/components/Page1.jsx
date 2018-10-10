@@ -23,7 +23,7 @@ const Page1Div = styled.div `
 
 const Page1 = () => {
   return (
-    <Page1Div>
+    <Page1Div className="page1">
       <Container className="page1Container" >
         <img src={backOfCardImg} alt="Remedy Music, LLC" />
       </Container>

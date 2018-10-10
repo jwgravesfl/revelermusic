@@ -91,7 +91,7 @@ const Page2Div = styled.div `
 
 const Page2 = () => {
   return (
-    <Page2Div>
+    <Page2Div id="page2">
       <Row>
         <Col className="colStyle" xl="3" md="6" xs="12">
           <Card className="servicesCard" body outline color="secondary">

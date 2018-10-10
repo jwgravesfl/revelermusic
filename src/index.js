@@ -5,6 +5,8 @@ import registerServiceWorker from './registerServiceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'typeface-allerta-stencil'
 
+import 'font-awesome/css/font-awesome.min.css';
+
 import styled from 'styled-components'
 
 const IndexDiv = styled.div `
