@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import {Row, Col, ListGroup, ListGroupItem} from 'reactstrap'
 
 import rmLogo from '../assets/RevelerLogoWhiteShadow.png'
+import sitemap from '../assets/sitemap.xml'
 
 const FooterDiv = styled.div `
 background-color: black;
@@ -150,7 +151,7 @@ const Footer = () => {
         </Col>
       </Row>
       <div id="rmSitemap">
-        Sitemap
+        <a href={sitemap} >Sitemap</a>
       </div>
     </FooterDiv>
   )
