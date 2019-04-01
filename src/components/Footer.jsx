@@ -142,7 +142,7 @@ const Footer = () => {
           <ListGroup flush className="listGroupContact">
             <ListGroupItem className="listGroupItemContact"><a href="https://www.facebook.com/revelermusicllc/"><i className="fa fa-facebook faIcons" /> <br />@revelermusicllc</a></ListGroupItem>
             <ListGroupItem className="listGroupItemContact"></ListGroupItem>
-            <ListGroupItem className="listGroupItemContact"><a href="https://www.instagram.com/revelermusicllc/"><i className="fa fa-instagram faIcons" /> <br />@revelermusicllc</a></ListGroupItem>
+            <ListGroupItem className="listGroupItemContact"><a href="https://www.instagram.com/revelermusicllc/"><i className="fa fa-instagram " /> <br />@revelermusicllc</a></ListGroupItem>
             <ListGroupItem className="listGroupItemContact"></ListGroupItem>
           </ListGroup>
         </Col>
